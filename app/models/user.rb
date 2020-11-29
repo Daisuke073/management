@@ -9,4 +9,5 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :employee_code, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
+  
 end
