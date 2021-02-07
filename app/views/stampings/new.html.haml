@@ -1,2 +1,16 @@
-.day
-  
+.name
+  名前
+  = current_user.name
+
+.time
+  %p 出勤
+
+  %p 退勤
+
+.working
+  = form_with model: @working, local: true do |f|
+    .button
+
+
+.logout
+  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'

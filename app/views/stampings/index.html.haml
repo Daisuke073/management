@@ -1,5 +1,14 @@
-%h1 Stampings#index
-%p Find me in app/views/stampings/index.html.haml
+.name
+  名前
+  = current_user.name
 
-.hoge
+.time
+  %p 出勤
+
+  %p 退勤
+
+.button
+
+
+.logout
   = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'

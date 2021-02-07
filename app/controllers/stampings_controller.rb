@@ -1,13 +1,17 @@
 class StampingsController < ApplicationController
+before_action :authenticate_user!
+
   def index
+    # @users =  User.find(params[:id])
   end
+
 
   def new
-    require "date"
-    @date = Date.today
+    @time = Working.new
   end
 
-  def crate
+  def create
+    
   end
 
 end
