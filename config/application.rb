@@ -15,6 +15,8 @@ module Management
       g.javascripts false
       g.helper false
       g.test_framework false
+    config.time_zone = 'Tokyo'
     end
   end
 end
+

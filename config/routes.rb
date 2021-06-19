@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   
   root "stampings#new"
 
-  resources :stampings, only:[:index, :new]
+  resources :stampings, only:[:index, :new, :create]
 end

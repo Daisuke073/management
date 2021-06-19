@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2020_12_15_120217) do
 
   create_table "workings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.date "month_day", null: false
-    t.time "time", null: false
+    t.datetime "start_time", null: false
+    t.datetime "end_time", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

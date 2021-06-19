@@ -1,7 +1,7 @@
 class Working < ApplicationRecord
-  belong_to :user
+  belongs_to :user
 
-  validates :user_id, presence :true
-  validates :month_day, presence :true
-  validates :time, presence :true
+  validates :user_id
+  validates :month_day
+  validates :time
 end

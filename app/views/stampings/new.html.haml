@@ -1,15 +1,24 @@
+.hoge
+  = Time.current
+
 .name
   名前
   = current_user.name
 
 .time
-  %p 出勤
+  %p 出勤 
+  -# = @now
 
   %p 退勤
+  -# = @now
 
 .working
   = form_with model: @working, local: true do |f|
+    
     .button
+    = f.submit "出勤", class: "listing__button"
+    = f.submit "退勤", class: "listing__button"
+
 
 
 .logout
